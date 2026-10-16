@@ -1,0 +1,17 @@
+{
+  "name": "otaku-showdown",
+  "version": "0.1.0",
+  "description": "Otaku Showdown: an anime-themed card duel with Yu-Gi-Oh style rules, chains, a deck editor and friend-vs-friend play. Plain JavaScript, no framework.",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "test": "node tests/engine.test.js",
+    "test:ui": "node build.js && node tests/ui.smoke.js",
+    "test:online": "node build.js && node tests/online.smoke.js",
+    "test:all": "npm test && npm run test:ui && npm run test:online"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  },
+  "engines": { "node": ">=18" }
+}
